@@ -1,23 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
+import ThoughtsMain from "./components/ThoughtsMain";
+import TasksMain from "./components/TasksMain";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container-fluid mt-4 px-5">
+      <h1 className="text-center">My Coding Journal</h1>
+      <div className=" d-flex column-gap-5">
+        <ThoughtsMain></ThoughtsMain>
+        <TasksMain></TasksMain>
+      </div>
     </div>
   );
 }
