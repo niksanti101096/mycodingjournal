@@ -110,6 +110,8 @@ function TasksMain() {
           localStorage.setItem("TasksStorage", JSON.stringify(updateData));
           Swal.fire("Your task has been edited!", "", "success");
         } else if (result.isDenied) {
+          setTasks("");
+          setTaskDate("");
           Swal.fire("Changes are not saved", "", "info");
         }
       });

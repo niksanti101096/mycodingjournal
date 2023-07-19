@@ -105,6 +105,7 @@ function ThoughtsMain() {
           Swal.fire("Your thought has been edited!", "", "success");
         } else if (result.isDenied) {
           Swal.fire("Changes are not saved", "", "info");
+          setThoughts("");
         }
       });
     } else {
